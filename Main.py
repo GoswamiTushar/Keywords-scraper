@@ -24,11 +24,10 @@ if __name__ == '__main__':
     fp = open(directory + '/KeywordsData.txt', 'w')
 
     fp.write("""
-        Type of Data : {}\n\n
         TOP 20 Alternative Tag Data : {}\n\n
         TOP 20 Title Tag Data : {}\n\n
         TOP 20 H2 Tag Data : {}\n\n
-        TOP 20 H3 Tag Data : {}""".format(type(sorted_alt), sorted_alt[:20], sorted_title[:20], sorted_h2[:20], sorted_h3[:20]))
+        TOP 20 H3 Tag Data : {}""".format(type(sorted_alt[:20], sorted_title[:20], sorted_h2[:20], sorted_h3[:20]))
 
     print("Fetched KeywordsData successfully")
     fp.close()

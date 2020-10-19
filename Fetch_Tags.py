@@ -89,6 +89,8 @@ class FetchTags(object):
 
 	def count_frequency(self, alt_tag_list, title, h2_list, h3_list):
 
+		special_characteres = "-|"
+
 		if len(alt_tag_list) != 0:
 			for data in alt_tag_list:
 				l = data.split()
@@ -98,19 +100,22 @@ class FetchTags(object):
 		
 		if title:	
 			for word in title.split():
-				self.title_dict[word] = self.title_dict.get(word, 0) + 1
+				if word not in special_characteres:
+					self.title_dict[word] = self.title_dict.get(word, 0) + 1
 
 		if len(h2_list) != 0:
 			for line in h2_list:
 				if line != None:
 					for word in line.split():
-						self.h2_dict[word] = self.h2_dict.get(word, 0) + 1
+						if word not in special_characteres:
+							self.h2_dict[word] = self.h2_dict.get(word, 0) + 1
 
 		if len(h3_list) != 0:
 			for line in h3_list:
 				if line != None:
 					for word in line.split():
-						self.h3_dict[word] = self.h3_dict.get(word, 0) + 1
+						if word not in special_characteres:
+							self.h3_dict[word] = self.h3_dict.get(word, 0) + 1
 
 		# print(self.alt_dict, self.title_dict, self.h2_dict, self.h3_dict, sep = '\n')
 		

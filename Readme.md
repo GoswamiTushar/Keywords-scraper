@@ -23,8 +23,6 @@ the driver module. Run in in the CLI or in IDE.
 
 - It will try to fetch 100 results but can be less due to inaccessible pages and broken links
 
-![searching](/home/froggy/Programs/Hacktoberfest/Rotten-Scripts/Python/Tags_Scraper/query.png)
-Format: ![Alt Text](Not Available)
+![searching](https://github.com/GoswamiTushar/Keywords-scraper/blob/main/images/query.png)
 
 ![results](/home/froggy/Programs/Hacktoberfest/Rotten-Scripts/Python/Tags_Scraper/result.png)
-Format: ![Alt Text](Not Available)

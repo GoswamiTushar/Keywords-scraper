@@ -25,4 +25,4 @@ the driver module. Run in in the CLI or in IDE.
 
 ![searching](https://github.com/GoswamiTushar/Keywords-scraper/blob/main/images/query.png)
 
-![results](/home/froggy/Programs/Hacktoberfest/Rotten-Scripts/Python/Tags_Scraper/result.png)
+![results](https://github.com/GoswamiTushar/Keywords-scraper/blob/main/images/result.png)
